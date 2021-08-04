@@ -1,0 +1,28 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+t = 166420.226
+b = 1.07888043
+```
+```{r}
+a = c(.1,.25,.5,.75,.9)
+for(i in a){
+  print(exp(((log(-log(1-i)))/b)+log(t)))
+}
+```
+
+
+```{r}
+exp(1)
+```
+
+
+```{r}
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
